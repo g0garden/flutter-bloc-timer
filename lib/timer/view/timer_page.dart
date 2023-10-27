@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_timer/main.dart';
 import 'package:flutter_timer/ticker.dart';
 import 'package:flutter_timer/timer/bloc/timer_bloc.dart';
 import 'package:flutter_timer/timer/timer.dart';
@@ -24,7 +23,7 @@ class TimerView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Flutter TIMER!')),
       body: Stack(children: [
-        //TODO : const Background(),
+        const Background(),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

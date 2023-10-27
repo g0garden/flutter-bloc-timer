@@ -15,6 +15,7 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
       : _ticker = ticker,
         super(const TimerInitial(_duration)) {
     //event handlers!
+    //TimerBloc의 state에 따라 어떤 이벤트를 on할지!
     on<TimerStarted>(_onStarted);
     on<TimerPaused>(_onPaused);
     on<TimerResumed>(_onResumed);
